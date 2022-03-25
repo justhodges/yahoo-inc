@@ -1,3 +1,158 @@
+body {
+  position: relative !important;	
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+  
+/* Text Selection Color */
+
+::selection {
+  background: #39007d;
+    color: #fff;
+}
+::-moz-selection {
+  background: #39007d;
+    color: #fff;
+}
+  
+/* Focus Outline Color */
+
+*:focus-visible {
+    outline: 3px solid #39007d;
+}
+  
+/* Change Default Lightbox Overlay Color */
+
+.w-lightbox-backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Reset Apple Form Styles */
+
+input, textarea, select { 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none;
+  border-radius: 0; 
+  background-image: none; 
+}
+  
+/* Navbar Styles */
+
+@media screen and (min-width: 992px) {
+  .nav-link.btn::after {
+      display: none;
+  }
+
+  .nav-link::after {
+      content: "";
+      position: absolute;
+      width: calc(100% - 32px);
+      bottom: 10px;
+      left: 16px;
+      right: 16px;
+      height: 4px;
+      background-color: #39007d;
+      transform: scaleX(0);
+      transition: all 0.25s;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.w--open::after {
+      transform: scaleX(1);
+  }
+}
+  
+/* Date Picker Styles */
+
+.w-input[disabled], .w-input[readonly], .w-select[disabled], .w-select[readonly], fieldset[disabled] .w-input, fieldset[disabled] .w-select {
+    background-color: #fff;
+}
+.flatpickr-day.selected {
+    background-color: #39007d !important;
+    border-color: #39007d !important;    	
+}
+  
+/* Word Wrap Fix */
+
+.break-word {
+  word-wrap : break-word;
+}
+  
+/* Blockquote Styles */
+
+blockquote:before {
+  content: open-quote;
+  font-family: "Yahoo Sans", sans-serif;
+  font-weight: 900;
+  font-size: 4em;
+  font-style: normal;
+  line-height: 0;
+  vertical-align: -.40em;
+  margin-right: -.15em;
+  opacity: .15;
+  color: #39007d;
+  z-index: -1;
+  position: relative;
+}
+
+blockquote::after {
+  content: close-quote;
+  font-family: "Yahoo Sans", sans-serif;
+}
+  
+/* Arrow Animation Styles */
+
+.arrow-animation:after {
+  display: inline-block;
+  font-family: Fujicons, sans-serif;
+  content: "arrow";
+  margin-left: 2px;
+  transform: translate(0);
+  transition: all .5s;
+  vertical-align: bottom;
+}
+
+.arrow-animation:hover::after,
+.arrow-animation:focus::after{
+  transform: translate(10px);
+}
+  
+/* Video Embed Styles */
+
+.video-embed iframe {
+  border-radius: 8px;
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+  
+/* Slider Controls Styles */
+
+.w-slider-nav {
+  pointer-events: none;
+}
+.w-slider-nav>div {
+  position: relative;	
+  pointer-events: auto;
+}
+.w-slider-nav-invert>div {
+  background: #e0e4e9;
+}
+.w-slider-nav-invert>div.w-active {
+  background: #39007d;
+}
+  
+/* Grid with Border Styles */
+
+.border-box {
+  height: calc(100% - 10px) !important;
+}
+
 /* Owl Carousel Styles */
 
 .owl-carousel .owl-stage-outer {
@@ -26,9 +181,6 @@
   margin-right: 0;
 }
 
-/* End Owl Carousel Styles */
-
-
 /* Form Field Styles */
 
 .intl-tel-input {
@@ -40,5 +192,4 @@
   top: auto;
 }
 
-/* End Form Field Styles */
 
