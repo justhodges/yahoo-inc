@@ -1,0 +1,44 @@
+/* Owl Carousel Styles */
+
+.owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+.owl-carousel .owl-stage {
+  display: flex;
+}
+.owl-prev.disabled,
+.owl-next.disabled {
+  opacity: 0.5;
+}
+.owl-prev,
+.owl-next {
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+}
+.card-slider {
+  display: block;
+}
+.card-slider_item {
+  max-width: none;
+  height: 100%;
+  margin-right: 0;
+}
+
+/* End Owl Carousel Styles */
+
+
+/* Form Field Styles */
+
+.intl-tel-input {
+  display:block;
+}
+.intl-tel-input.allow-dropdown .flag-container {
+  height: 36px;
+  bottom: 0;
+  top: auto;
+}
+
+/* End Form Field Styles */
+
