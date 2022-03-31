@@ -130,6 +130,10 @@ blockquote::after {
   top: 0;
   width: 100%;
 }
+
+.wistia iframe {
+  border-radius: 8px;
+}
   
 /* Slider Controls Styles */
 
