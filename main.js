@@ -330,6 +330,13 @@ $(document).ready(function() {
 		}
 	})
 	
+});
+
+
+
+// Carousel Controls
+
+$(document).ready(function() {
 	$('#slider-left-content-previous').on('click', function(){
 		$('#slider-left-content-previous-control').trigger('click');
 	});
@@ -343,5 +350,4 @@ $(document).ready(function() {
 	$('#slider-right-content-next').on('click', function(){
 		$('#slider-right-content-next-control').trigger('click');
 	});
-	
 });
